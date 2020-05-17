@@ -1,0 +1,131 @@
+/* RESETS */
+* {
+    /* border: 1px solid rgb(243, 29, 29);
+    background-color: rgba(243,29,29,0.1); */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+h1 {
+    font: fantasy;
+    font-size: 28px;
+    padding: 0.5px 60px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    
+}
+h1:nth-of-type(1)::first-letter {
+        font-size: 56px;
+        color: rgb(0, 14, 75);
+        font-weight: bold;
+        text-shadow: 4px 1px rgb(26, 0, 49);
+        line-height: 0.5;
+        letter-spacing: 3px;   
+}
+.junior{
+    color:rgb(235, 197, 28);
+    
+}
+
+body {
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bolder;
+    transition: color 0.3s ease-in;
+}
+a:hover {
+    color: rgb(24, 9, 107);
+}
+ul {
+    list-style: none;
+}
+h4, h3
+li:first-child { 
+    margin-top: 12px;
+}
+li:last-child {
+    margin-bottom: 18px;
+}
+
+#meuHeader,
+
+aside p {
+    font: fantasy; 
+    font-size: 20px;
+   
+}
+header div {
+    display: inline-block;
+    text-align: right;
+    width: calc( 100% - 55px);
+    font-size: 16px;
+}
+header div p:first-child {
+    font-size: 2em;
+    font-family: fantasy;
+}
+header div p:first-child i {
+    font-size: 1.3em;
+    transition: filter 0.2s ease-in-out;
+}
+header div p:first-child i:hover {
+    filter: drop-shadow( 0 3px 3px rgb(212, 138, 0));
+}
+/* section .destaque {
+    color: red;
+} */
+main,
+aside {
+    margin: 20px 40px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+}
+main p {
+    font-weight: bolder;
+}
+
+header,
+footer {
+    background-color: rgb(161, 174, 250);
+    background-image: linear-gradient(24deg, #4f66a3, #a9c0e4);
+    padding: 16px;
+}
+
+header {
+    filter: drop-shadow(0 3px 3px rgba(0,0,0,0.5));
+
+}
+
+footer {
+    filter: drop-shadow(0 -3px 3px rgba(0,0,0,0.5));
+    text-align: center;
+    font-size: 18px;
+    bottom: 0;
+    width: 100%;
+}
+article p {
+    font-size: 18px ;
+}
+
+section:not(:first-child) {
+    margin-top: 20px;
+}
+
+
+a#irParaTopo[href="#meuHeader"] {
+    background-color: rgb(155, 0, 31);
+    color: #fff;
+    text-transform: lowercase;
+    border-radius: 30px;
+    display: block;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    padding: 5px 10px;
+    border: 1px solid;
+}
