@@ -167,7 +167,7 @@ h2 {
 
 .img-portfolio {
     height: 180px;
-    width: 240px;
+    width: 100%;
     object-fit: cover;
     object-position: left bottom;
     transition: transform 500ms;
