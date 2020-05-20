@@ -7,7 +7,7 @@
 
 body {
     background-color: rgb(87, 0, 158);
-    background-image: linear-gradient(62deg, rgb(26, 1, 29), rgb(121, 3, 175));
+    background-image: linear-gradient(450deg, rgb(34, 1, 43), rgb(140, 3, 204));
     background-size: auto 100vh;
     font-family: 'Source Code Pro', monospace;
     height: 100vh;
@@ -50,8 +50,8 @@ header {
     z-index: 1;
     font-weight: bolder;
     filter: drop-shadow(0 3px 3px rgba(0,0,0,0.7));
-    border-radius: 20px;
-
+    border-radius: 30px;
+    margin-top: 6px;
 }
 
 .menu ul {
