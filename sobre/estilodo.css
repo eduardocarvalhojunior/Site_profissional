@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    height: 100vh;
+  }
+
+  /* se a tela tiver pelo menos 400px vai carregar estes estilos */
+  @media (min-width: 800px) {
+    body {
+      background-size: 600px;
+    }
+  }
+
+   header {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: black;
+   }
+  
+  .start {
+      position: relative;
+      width: 16em;
+      font-size: 200%;
+      font-weight: 400;
+      margin: 20% auto;
+      color: #5ebbd3;
+      opacity: 0;
+      z-index: 1;
+      -webkit-animation: intro 5s ease-out;
+      animation: intro 5s ease-out;
+  }
+
+  @media (max-width: 600px) {
+    .start {
+        font-size: 100%;
+        font-weight: 200;
+        margin: 20% auto;
+    }
+  }
+
+  @-webkit-keyframes intro {
+      0% {
+          opacity: 1;
+      }
+      90% {
+          opacity: 1;
+      }
+      100% {
+          opacity: 0;
+      }
+  }
+
+  @keyframes intro {
+      0% {
+          opacity: 1;
+      }
+      90% {
+          opacity: 1;
+      }
+      100% {
+          opacity: 0;
+      }
+  }
+  
+  .img-sw {
+      position: absolute;
+      left: 21%;
+      top: 25%;
+      height: 50vh;
+      opacity: 0;
+      z-index: 1;
+      -webkit-animation: logo 12s ease 5.5s;
+      animation: logo 12s ease 5.5s;
+  }
+
+  @media (max-width: 600px) {
+    .img-sw {
+        height: 20vh;
+        left: auto;
+        right: auto;
+        top: 40%;
+    }
+  }
+
+  @-webkit-keyframes logo {
+      0% {
+          -webkit-transform: scale(1); opacity: 1;
+      }
+      50% {
+          opacity: 1;
+      }
+      100% {
+          -webkit-transform: scale(0.1); opacity: 0;
+      }
+  }
+
+  @keyframes logo {
+      0% {
+          transform: scale(1); opacity: 1;
+      }
+      50% {
+          opacity: 1;
+      }
+      100% {
+          transform: scale(0.1); opacity: 0;
+      }
+  }
+
+  .texto {
+        color: rgb(211, 190, 0);
+        font-family: sans-serif;
+        position: absolute;
+        width: 18em;
+        height: 50em;
+        bottom: 0;
+        left: 50%;
+        margin-left: -9em;
+        font-size: 300%;
+        letter-spacing: 10px;
+        line-height: 100px;
+        text-align: center;
+        overflow: hidden;
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform: perspective(300px) rotateX(25deg);
+        transition: perspective(300px) rotateX(25deg);
+  }
+  @media (max-width: 600px) {
+    .texto {
+        font-size: 110%;
+        letter-spacing: 5px;
+        line-height: 50px;
+        -webkit-transform: perspective(300px) rotateX(25deg);
+        transition: perspective(300px) rotateX(25deg);
+    }
+  }
+
+  @media (min-width: 600px) {
+    .texto {
+        font-size: 200%;
+        letter-spacing: 7.5px;
+        line-height: 75px;
+        -webkit-transform: perspective(300px) rotateX(25deg);
+        transition: perspective(300px) rotateX(25deg);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .texto {
+        font-size: 300%;
+        letter-spacing: 10px;
+        line-height: 100px;
+        -webkit-transform: perspective(300px) rotateX(25deg);
+        transition: perspective(300px) rotateX(25deg);
+    }
+  }
+
+  /* .texto:after {
+      position: absolute;
+      content: ' ';
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 60%;
+      background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+      background-image: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+      background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+      pointer-events: none;
+  } */
+
+  .episodio {
+    position: absolute;
+    top: 100%;
+    -webkit-animation: scroll 80s linear 15s;
+    animation: scroll 80s linear 15s;
+  }
+
+  .episodio h3,
+  .episodio h3 {
+      text-align: center;
+      left: auto;
+      right: auto;
+  }
+
+
+  @-webkit-keyframes scroll {
+      0% {
+          top: 100%;
+      }
+      100% {
+          top: -150%;
+      }
+  }
+
+  @keyframes scroll {
+      0% {
+          top: 100%;
+      }
+      100% {
+          top: -150%;
+      }
+  }
+  
+  .site-subtitle,
+  .site-title {
+    color: #b69954;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    left: 40%;
+    top: 50%;
+    line-height: 200px;
+    opacity: 0;
+    z-index: 1;
+    -webkit-animation: nome 3s linear 70s forwards;
+    animation: nome 3s linear 70s forwards;
+  }
+
+  @media (max-width: 600px) {
+    .site-subtitle,
+    .site-title {
+        left: 25%;
+        top: 43%;
+        line-height: 150px;
+        -webkit-animation: nome 6s linear 60s forwards;
+        animation: nome 6s linear 60 forwards;
+    }
+  }
+
+  @-webkit-keyframes nome {
+    0% {
+        -webkit-transform: scale(0.0); opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(1); opacity: 1;
+    }
+  }
+
+  @keyframes nome {
+    0% {
+        transform: scale(0,0); opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1); opacity: 1;
+    }
+  }
+
+  .site-title {
+    font-family: 'Staatliches', cursive;
+    font-size: 4em;
+    line-height: 1em;
+  }
+
+  @media (max-width: 600px) {
+    .site-title {
+      font-size: 3em;
+    }
+  }
+
+  .site-subtitle {
+    font-family: 'Roboto Mono', monospace;
+  }
+
