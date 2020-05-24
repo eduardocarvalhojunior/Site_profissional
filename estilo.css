@@ -166,10 +166,10 @@ h2 {
 }
 
 .img-portfolio {
-    height: 180px;
+    height: 150px;
     width: 100%;
     object-fit: cover;
-    object-position: left bottom;
+    object-position: center bottom;
     transition: transform 500ms;
 }
 
