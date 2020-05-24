@@ -12,8 +12,12 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
     height: 100vh;
+    
   }
-
+.imgbk{
+    background-image: url('../img/starg.jpg');
+    background-size: cover; 
+}
   /* se a tela tiver pelo menos 400px vai carregar estes estilos */
   @media (min-width: 800px) {
     body {
@@ -26,7 +30,6 @@ body {
      display: flex;
      justify-content: center;
      align-items: center;
-     background-color: black;
    }
   
   .start {
@@ -167,19 +170,6 @@ body {
     }
   }
 
-  /* .texto:after {
-      position: absolute;
-      content: ' ';
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 60%;
-      background-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
-      background-image: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
-      background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
-      pointer-events: none;
-  } */
-
   .episodio {
     position: absolute;
     top: 100%;
@@ -193,7 +183,6 @@ body {
       left: auto;
       right: auto;
   }
-
 
   @-webkit-keyframes scroll {
       0% {
