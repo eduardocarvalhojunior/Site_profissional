@@ -186,6 +186,7 @@ h2 {
 .portfolio h2 {
   
     color: whitesmoke;
+    text-shadow: 2px 2px rgb(46, 46, 46);
     margin-bottom: 1.5em;
     font-size: 1.5em;
     
