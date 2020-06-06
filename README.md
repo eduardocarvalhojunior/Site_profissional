@@ -10,10 +10,10 @@
 
 ## 💻 Sobre o projeto
 
-Decidi fazer um site para me apresentar e mostrar meus projetos.
-No site contém um breve resumo do momento que decidi desenvolver o projeto (SOBRE).
-Também incluí meu currículo profissional (CUrrículo).
-Coloquei alguns projetos que tenho atualmente, meus dados de contatos como Linkedin, Github e E-mail.
+- Decidi fazer um site para me apresentar e mostrar meus projetos.
+- No site contém um breve resumo do momento que decidi desenvolver o projeto (SOBRE).
+- Também incluí meu currículo profissional (CUrrículo).
+- Coloquei alguns projetos que tenho atualmente, meus dados de contatos como Linkedin, Github e E-mail.
 
 
 
