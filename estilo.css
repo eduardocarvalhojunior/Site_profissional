@@ -139,6 +139,7 @@ h2 {
 .portfolio .grid {
     display: grid;
     gap: 2em;
+    color: whitesmoke;
 }
 
 @media (min-width: 560px) {
