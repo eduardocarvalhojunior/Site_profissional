@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 body {
@@ -12,11 +17,12 @@ body {
     font-family: 'Source Code Pro', monospace;
     height: 100vh;
     font-size: 12px;
+    
 }
 
 /* se a tela tiver pelo menos 400px vai carregar estes estilos */
 @media (min-width: 400px) {
-    body {
+    body{
         font-size: 14px;
     }
 }
@@ -218,6 +224,7 @@ h2 {
 
 footer {
     filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, 0.5));
+    background-color: rgb(152, 255, 203);
     text-align: center;
     font-size: 17px;
     bottom: 0;
