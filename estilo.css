@@ -22,21 +22,21 @@ body {
 
 /* se a tela tiver pelo menos 400px vai carregar estes estilos */
 @media (min-width: 400px) {
-    body{
-        font-size: 14px;
+    body, footer {
+        font-size: 10px;
     }
 }
 
 /* breakpoint */
 @media (min-width: 600px) {
-    body {
-        font-size: 18px;
+    body, footer {
+        font-size: 14px;
     }
 }
 
 /* breakpoint */
 @media (min-width: 1200px) {
-    body {
+    body, footer {
         font-size: 20px;
     }
 }
