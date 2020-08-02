@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
 }
 
 ::-webkit-scrollbar {
@@ -16,8 +15,7 @@ body {
     background-size: auto 100vh;
     font-family: 'Source Code Pro', monospace;
     height: 100vh;
-    font-size: 12px;
-    
+    font-size: 12px;   
 }
 
 /* se a tela tiver pelo menos 400px vai carregar estes estilos */
@@ -59,6 +57,7 @@ header {
     border-radius: 30px;
     margin-top: 12px;
 }
+
 .circle {
     background-color: rgb(152, 255, 203);
     position: absolute;
@@ -140,13 +139,13 @@ h2 {
     font-size: 3em;
     /* font-family: 'Fredericka the Great', cursive; */
     font-family: 'Bungee Shade', cursive;
-
+    
 }
 
 .site-subtitle {
     font-style: italic;
     line-height: 0.2em;
-    padding: 2px 12px;
+    /* padding: 2px 12px; */
     font-variant: small-caps;
     letter-spacing: 6px;
 
