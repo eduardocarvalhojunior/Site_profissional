@@ -144,10 +144,10 @@ h2 {
 
 .site-subtitle {
     font-style: italic;
-    line-height: 0.2em;
-    /* padding: 2px 12px; */
+    line-height: 1.2em;
+    padding: 14px 28px;
     font-variant: small-caps;
-    letter-spacing: 6px;
+    letter-spacing: 10px;
 
 }
 
