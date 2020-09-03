@@ -23,6 +23,8 @@ body {
     body, footer {
         font-size: 10px;
         height: 14vh;
+        
+        
     }
 }
 
@@ -31,6 +33,8 @@ body {
     body, footer {
         font-size: 14px;
         height: 14vh;
+        
+        
     }
 }
 
@@ -39,6 +43,8 @@ body {
     body, footer {
         font-size: 20px;
         height: 8vh;
+       
+       
     }
 }
 
@@ -180,7 +186,7 @@ h2 {
 }
 
 .img-portfolio {
-    height: 150px;
+    height: 120px;
     width: 100%;
     object-fit: cover;
     object-position: center bottom;
