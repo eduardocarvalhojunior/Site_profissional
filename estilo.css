@@ -22,9 +22,7 @@ body {
 @media (min-width: 400px) {
     body, footer {
         font-size: 10px;
-        height: 14vh;
-        
-        
+        height: 14vh;   
     }
 }
 
@@ -32,9 +30,7 @@ body {
 @media (min-width: 600px) {
     body, footer {
         font-size: 14px;
-        height: 14vh;
-        
-        
+        height: 14vh;   
     }
 }
 
@@ -43,8 +39,6 @@ body {
     body, footer {
         font-size: 20px;
         height: 8vh;
-       
-       
     }
 }
 
@@ -148,7 +142,6 @@ h2 {
     font-size: 3em;
     /* font-family: 'Fredericka the Great', cursive; */
     font-family: 'Bungee Shade', cursive;
-    
 }
 
 .site-subtitle {
@@ -239,5 +232,4 @@ footer {
     padding: 10px;
     width: 100%;
 
-    
 }
