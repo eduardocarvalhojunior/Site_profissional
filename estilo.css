@@ -15,28 +15,34 @@ body {
     background-size: auto 100vh;
     font-family: 'Source Code Pro', monospace;
     height: 100vh;
-    font-size: 12px;   
+    font-size: 12px;
 }
 
 /* se a tela tiver pelo menos 400px vai carregar estes estilos */
 @media (min-width: 400px) {
-    body, footer {
+
+    body,
+    footer {
         font-size: 10px;
-        height: 14vh;   
+        height: 14vh;
     }
 }
 
 /* breakpoint */
 @media (min-width: 600px) {
-    body, footer {
+
+    body,
+    footer {
         font-size: 14px;
-        height: 14vh;   
+        height: 14vh;
     }
 }
 
 /* breakpoint */
 @media (min-width: 1200px) {
-    body, footer {
+
+    body,
+    footer {
         font-size: 20px;
         height: 8vh;
     }
