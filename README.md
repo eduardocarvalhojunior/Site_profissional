@@ -16,14 +16,20 @@
 - Coloquei alguns projetos que tenho atualmente, meus dados de contatos como Linkedin, Github e E-mail.
 
 
+---
 
 ### 🎨 Layout
 
 Me inspirei no curso da Alura Caelum.
 A estrutura foi feita em 4 dias.
-Fui mudando de cores varias vezes até chegar na atual.
+Fui mudando de cores varias vezes até chegar na atual
+
+
+---
+
 
 ## 🛠 Tecnologias
+
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
@@ -31,6 +37,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Html5
 
 
+---
 
 ### Autor
 
