@@ -10,11 +10,12 @@
 }
 
 body {
-    background-color: rgb(33, 0, 54);
+    /* background-color: rgb(33, 0, 54);
     background-image: linear-gradient(350deg, rgb(86, 1, 107), rgb(21, 0, 31));
-    background-size: auto 100vh;
+    background-size: 100vw 100vh; */
     font-family: 'Source Code Pro', monospace;
-    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
     font-size: 12px;
 }
 
@@ -51,6 +52,8 @@ body {
 }
 
 
+
+
 header {
     height: 100vh;
     display: flex;
@@ -62,7 +65,6 @@ header {
 .menu {
     background-color: rgb(152, 255, 203);
     position: absolute;
-    width: 40vw;
     top: 0;
     z-index: 1;
     font-weight: bolder;
@@ -75,12 +77,33 @@ header {
 .circle {
     background-color: rgb(152, 255, 203);
     position: absolute;
-    width: 41vw;
+    /* width: 41vw; */
     top: 0;
     z-index: 1;
     border-radius: 30px;
     margin-top: 7px;
     padding: 15px 18px;
+    
+
+}
+@media (max-width: 800px) {
+    .circle {
+        width: 81vw;
+
+    }
+    .menu {
+        width: 80vw;
+    }
+
+}
+@media (min-width: 800px) {
+    .circle {
+        width: 41vw;
+
+    }
+    .menu {
+        width: 40vw;
+    }
 }
 
 .menu ul {
@@ -164,20 +187,40 @@ h2 {
 
 }
 
-.portfolio .grid {
+@media(max-width: 800px) {
+    .site-title, .site-subtitle {
+      width: 80vw;
+    }
+  }
+  @media(min-width: 800px) {
+    .site-title, .site-subtitle {
+      width: 100vw;
+    }
+  }
+
+
+.presentation {
+    background-color: rgb(33, 0, 54);
+    background-image: linear-gradient(350deg, rgb(86, 1, 107), rgb(21, 0, 31));
+    background-size: cover;
+}
+
+.portfolio, .grid {
+    
     display: grid;
     gap: 2em;
     color: whitesmoke;
+    
 }
 
 @media (min-width: 560px) {
-    .portfolio .grid {
+    .portfolio, .grid {
         grid-template-columns: 240px 240px;
     }
 }
 
-@media (min-width: 880px) {
-    .portfolio .grid {
+@media (min-width: 860px) {
+    .portfolio, .grid {
         grid-template-columns: repeat(3, 260px);
         align-content: center;
         justify-content: center;
@@ -191,30 +234,44 @@ h2 {
 
 .img-portfolio {
     height: 120px;
-    width: 100%;
+    /* width: 100%; */
     object-fit: cover;
     object-position: center bottom;
     transition: transform 500ms;
 }
 
+@media(max-width: 800px) {
+    .img-portfolio {
+      width: 80%;
+    }
+  }
+  @media(min-width: 800px) {
+    .img-portfolio {
+      width: 100%;
+    }
+  }
+
 .img-portfolio:hover {
     transform: scale(1.2) rotate(-2deg);
 }
 
-.contato,
+/* .contato, */
 .portfolio {
     padding: 3em;
     min-height: 100vh;
+    background-color: rgb(33, 0, 54);
+    background-image: linear-gradient(350deg, rgb(86, 1, 107), rgb(21, 0, 31));
+    background-size: cover;
 }
 
-.contato h2,
+/* .contato h2, */
 .portfolio h2 {
 
     color: whitesmoke;
     text-shadow: 2px 2px rgb(46, 46, 46);
     margin-bottom: 1.5em;
     font-size: 1.5em;
-
+    
 }
 
 .contato .icons {
@@ -233,6 +290,63 @@ h2 {
     text-decoration: none;
     text-shadow: 0px 0px 50px rgba(255, 255, 255, .5);
 }
+
+
+.contato {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    flex-direction: column;
+    background-color: rgb(33, 0, 54);
+    background-image: linear-gradient(350deg, rgb(86, 1, 107), rgb(21, 0, 31));
+    background-size: cover;
+  }
+  
+  .contato h2 {
+    color: whitesmoke;
+    text-shadow: 2px 2px rgb(46, 46, 46);
+    margin-bottom: 1.5em;
+    font-size: 1.5em;
+    width: 80vw;
+    text-align: left;
+  }
+  @media(max-width: 800px) {
+    .contato h2 {
+      width: 80vw;
+    }
+  }
+  @media(min-width: 800px) {
+    .contato h2 {
+      width: 62vw;
+    }
+  }
+
+
+  .contato a {
+    margin: 20px;
+    font-size: 40px;
+  }
+  .contactIconsRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  @media(max-width: 800px) {
+    .contactIconsRow {
+      width: 80vw;
+    }
+  }
+  @media(min-width: 800px) {
+    .contactIconsRow {
+      width: 40vw;
+    }
+  }
+
 
 footer {
     filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, 0.5));
