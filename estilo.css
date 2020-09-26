@@ -24,7 +24,7 @@ body {
 
     body,
     footer {
-        font-size: 10px;
+        font-size: 12px;
         height: 14vh;
     }
 }
@@ -88,7 +88,7 @@ header {
 }
 @media (max-width: 800px) {
     .circle {
-        width: 81vw;
+        width: 83vw;
 
     }
     .menu {
@@ -189,7 +189,7 @@ h2 {
 
 @media(max-width: 800px) {
     .site-title, .site-subtitle {
-      width: 80vw;
+      width: 100vw;
     }
   }
   @media(min-width: 800px) {
